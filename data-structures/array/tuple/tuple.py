@@ -65,7 +65,7 @@ class Tuple():
                 c += 1
         return c
 
-    def index(self, element):
+    def index_of(self, element):
         """
         Returns the index of `element` if it is in the tuple
         """
