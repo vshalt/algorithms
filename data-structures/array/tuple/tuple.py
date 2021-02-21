@@ -1,7 +1,6 @@
 class Tuple():
     """
     Tuple data type implemented in python.
-    tuple assignment not implemented (tuple[x]=y)
     """
     def __init__(self, *args):
         """
@@ -9,6 +8,20 @@ class Tuple():
         """
         self.tuple = self._create_tuple(*args)
         self.length = len(args)
+
+    def __getitem__(self, index):
+        """
+        Get item from tuple
+        """
+        return self.tuple[index]
+
+    def __setitem__(self, index, element):
+        """
+        Set item to tuple
+        """
+        if index < 0 or index >= self.length:
+            raise IndexError('Index out of bounds!')
+        self.tuple[index] = element
 
     def _create_tuple(self, *args):
         """

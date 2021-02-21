@@ -1,6 +1,9 @@
 import collections
 
 class Set():
+    """
+    Set implemented in python
+    """
     def __init__(self, *args):
         if args:
             self.set = self._make_set(*args)
@@ -8,18 +11,6 @@ class Set():
         else:
             self.set = self._make_empty_set()
             self.length = 0
-
-    def _make_set(self, *args):
-        set = [*args]
-        set = self._remove_duplicates(set)
-        return set
-
-    def _make_empty_set(self):
-        return []
-
-    def _remove_duplicates(self, set):
-        temp = collections.Counter(set)
-        return list(temp.keys())
 
     def __str__(self):
         temp = ""
@@ -34,6 +25,18 @@ class Set():
 
     def __len__(self):
         return self.length
+
+    def _make_set(self, *args):
+        set = [*args]
+        set = self._remove_duplicates(set)
+        return set
+
+    def _make_empty_set(self):
+        return []
+
+    def _remove_duplicates(self, set):
+        temp = collections.Counter(set)
+        return list(temp.keys())
 
     def add(self, element):
         if element not in self.set:

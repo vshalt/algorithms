@@ -3,15 +3,19 @@ import ctypes
 class List():
     """
     List data type implemented in python.
-    Item assignment not supported (arr[x] = y)
     """
-    def __init__(self):
+    def __init__(self, *args):
         """
         Initialize each list with the following parameters.
         """
-        self.length = 0
-        self.capacity = 1
-        self.array = self._create_array(self.capacity)
+        if args:
+            self.length = len(args)
+            self.capacity = self.length
+            self.array = [*args]
+        else:
+            self.length = 0
+            self.capacity = 1
+            self.array = self._create_array(self.capacity)
 
     def __str__(self):
         """
@@ -39,6 +43,21 @@ class List():
         func: len()
         """
         return self.length
+
+    def __getitem__(self, index):
+        """
+        Used to get items from list
+        """
+        return self.array[index]
+
+    def __setitem__(self, index, element):
+        """
+        Used to set items in list
+        """
+        if 0 <= index < self.length:
+            self.array[index] = element
+        else:
+            raise IndexError('Error out of bounds!')
 
     def change(self, index, element):
         """
