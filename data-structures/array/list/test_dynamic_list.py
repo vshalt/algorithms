@@ -56,10 +56,6 @@ class TestList(unittest.TestCase):
         self.arr.reverse()
         self.assertEqual(str(self.arr), str([4, 3, 2, 1]))
 
-    def test_change(self):
-        self.arr.change(1, 5)
-        self.assertEqual(str(self.arr), str([1, 5, 3, 4]))
-
     def test_len(self):
         self.assertEqual(len(self.arr), 4)
 

@@ -3,6 +3,12 @@ import collections
 class Set():
     """
     Set implemented in python
+    Time complexities of class functions:
+    func: __len__()     => O(1)
+    func: add()         => O(1)
+    func: remove()      => O(n)
+    func: clear()       => O(1)
+    func: pop()         => O(1)
     """
     def __init__(self, *args):
         if args:

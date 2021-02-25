@@ -17,12 +17,25 @@ This repository contains compilation of some data structure implementations and 
     - [Set](data-structures/array/set)
 
 - [Stack](data-structures/stack)
+    - [Circluar array stack](data-structures/stack/circular_array_stack)
+    - [Linked list stack](data-structures/stack/linked_list_stack)
+
+- [Queue](data-structures/queue)
+    - [Circular array queue](data-structures/queue/circular_array_queue)
+    - [Linked list queue](data-structures/queue/linked_list_queue)
+
+- [Doubly ended queue](data-structures/double-ended-queue)
 
 
 ## Algorithms
-- [Binary Search](algorithms/binary_search)
+- [Searches](algorithms/searches)
+    - [Binary Search](algorithms/searches/binary_search)
+    - [Linear Search](algorithms/searches/linear_search)
+
+- [Sorts](algorithms/sorts)
+    - [Insertion Sort](algorithms/sorts/insertion_sort)
+
 - [Factorial](algorithms/factorial)
-- [Insertion Sort](algorithms/insertion_sort)
 - [Matching Parenthesis](algorithms/matching_parenthesis)
 
 

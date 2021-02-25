@@ -7,6 +7,12 @@ class Empty(Exception):
 class Stack():
     """
     Implementation of Stack with lists.
+    Time complexities of the class functions:
+    func: __len__()     => O(1)
+    func: push()        => O(1)
+    func: pop()         => O(1)
+    func: is_empty()    => O(1)
+    func: top()         => O(1)
     """
     def __init__(self, *args):
         """

@@ -3,6 +3,20 @@ import ctypes
 class List():
     """
     List data type implemented in python.
+    Time complexities of the class functions:
+        func: __len__()         => O(1)
+        func: __setitem__()     => O(1)
+        func: __getitem__()     => O(1)
+        func: append()          => O(1)
+        func: insert_at()       => O(n)
+        func: pop()             => O(1)
+        func: clear()           => O(1)
+        func: index_of()        => O(1)
+        func: contains()        => O(n)
+        func: count()           => O(n)
+        func: remove_at()       => O(n)
+        func: remove()          => O(n)
+        func: reverse()         => O(n)
     """
     def __init__(self, *args):
         """
@@ -58,16 +72,6 @@ class List():
             self.array[index] = element
         else:
             raise IndexError('Error out of bounds!')
-
-    def change(self, index, element):
-        """
-        Change the element at `index` to new `element`.
-        """
-        if self.length == 0:
-            raise IndexError('List is empty')
-        if index < 0 or index >= self.length:
-            raise IndexError('Index out of bounds!')
-        self.array[index] = element
 
     def append(self, element):
         """

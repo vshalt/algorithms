@@ -1,6 +1,12 @@
 class Tuple():
     """
     Tuple data type implemented in python.
+        Time complexities of class functions:
+        func: __len__()         => O(1)
+        func: __getitem__()     => O(1)
+        func: __setitem__()     => O(1)
+        func: count()           => O(n)
+        func: index_of()        => O(n)
     """
     def __init__(self, *args):
         """
@@ -55,16 +61,6 @@ class Tuple():
         func: len()
         """
         return self.length
-
-    def change(self, index, element):
-        """
-        Change the element at `index` to a new `element`
-        """
-        if self.length == 0:
-            raise ValueError('Tuple is empty')
-        if index < 0 or index > self.length:
-            raise IndexError('Index out of bounds')
-        self.tuple[index] = element
 
     def count(self, element):
         """
