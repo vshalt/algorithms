@@ -2,6 +2,7 @@ import unittest
 from circular_array_queue import Queue as CircularQueue
 from circular_array_queue import Empty
 from linked_list_queue import Queue as LinkedListQueue
+from circular_linked_queue import Queue as CircularLinkedQueue
 
 class TestCircularQueue(unittest.TestCase):
     def setUp(self):
@@ -83,6 +84,28 @@ class TestLinkedListQueue(unittest.TestCase):
     def test_first(self):
         self.assertEqual(self.queue.first(), 1)
 
+class TestCircularLinkedQueue(unittest.TestCase):
+    def setUp(self):
+        self.queue = CircularLinkedQueue()
+        self.queue.enqueue(1)
+        self.queue.enqueue(2)
+        self.queue.enqueue(3)
+        self.queue.enqueue(4)
+
+    def test_is_empty(self):
+        TestLinkedListQueue.test_is_empty(self)
+
+    def test_length(self):
+        TestLinkedListQueue.test_length(self)
+
+    def test_dequeue(self):
+        TestLinkedListQueue.test_dequeue(self)
+
+    def test_enqueue(self):
+        TestLinkedListQueue.test_enqueue(self)
+
+    def test_first(self):
+        TestLinkedListQueue.test_first(self)
 
 if __name__ == '__main__':
     unittest.main()
