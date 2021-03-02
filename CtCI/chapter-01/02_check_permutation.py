@@ -1,6 +1,7 @@
 """
 Given two strings, write a method to decide if one is a permutation of the other.
 """
+from collections import Counter
 
 def check_permutation(s1: str, s2: str) -> bool:
     max_non_repeating_chars = 128  # in case of ascii, 256 for extended ascii
@@ -14,3 +15,6 @@ def check_permutation(s1: str, s2: str) -> bool:
             return False
         char_map[ord(char)] -= 1
     return True
+
+def check_permutation_pythonic(s1: str, s2: str) -> bool:
+    return Counter(s1) == Counter(s2)

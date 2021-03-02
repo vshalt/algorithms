@@ -15,3 +15,6 @@ def is_unique(string: str) -> bool:
             return False
         char_map[value] = True
     return True
+
+def is_unique_pythonic(string: str) -> bool:
+    return len(set(string)) == len(string)

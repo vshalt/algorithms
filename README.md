@@ -6,6 +6,7 @@ This repository contains compilation of some data structure implementations and 
 
 - [Data Structures](#data-structures)
 - [Algorithms](#algorithms)
+- [Cracking the coding interview](#cracking-the-coding-interview)
 - [Tests](#tests)
 
 
@@ -42,6 +43,8 @@ This repository contains compilation of some data structure implementations and 
 - [Factorial](algorithms/factorial)
 - [Matching Parenthesis](algorithms/matching_parenthesis)
 
+## Cracking the Coding Interview
+- [Chapter 1: Arrays and Strings](CtCI/chapter-01/)
 
 ## Tests
 
