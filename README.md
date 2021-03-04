@@ -6,8 +6,7 @@ This repository contains compilation of some data structure implementations and 
 
 - [Data Structures](#data-structures)
 - [Algorithms](#algorithms)
-- [Cracking the coding interview](#cracking-the-coding-interview)
-- [Tests](#tests)
+- [Cracking the coding interview](#cracking-the-coding-interview) [Tests](#tests)
 
 
 ## Data Structures
@@ -31,6 +30,11 @@ This repository contains compilation of some data structure implementations and 
 
 - [Doubly linked list](data-structures/doubly-linked-list)
     - [Positional list](data-structures/doubly-linked-list/positional_list.py)
+
+- [Tree](data-structures/tree)
+    - [Abstract tree](data-structures/tree/abstract_tree.py)
+    - [Abstract binary tree](data-structures/tree/abstract_binary_tree.py)
+    - [Linked list binary tree](data-structures/tree/linked_binary_tree.py)
 
 ## Algorithms
 - [Searches](algorithms/searches)
