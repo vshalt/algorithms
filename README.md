@@ -44,6 +44,12 @@ This repository contains compilation of some data structure implementations and 
 - [Sorts](algorithms/sorts)
     - [Insertion Sort](algorithms/sorts/insertion_sort)
 
+- [Tree traversals](algorithms/tree_traversal/)
+    - [Breadth first traversal](algorithms/tree_traversal/breadth_first_traversal.py)
+    - [Inorder traversal](algorithms/tree_traversal/inorder_traversal.py)
+    - [Postorder traversal](algorithms/tree_traversal/postorder_traversal.py)
+    - [Preorder traversal](algorithms/tree_traversal/preorder_traversal.py)
+
 - [Factorial](algorithms/factorial)
 - [Matching Parenthesis](algorithms/matching_parenthesis)
 
